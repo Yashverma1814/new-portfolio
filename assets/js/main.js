@@ -25,6 +25,14 @@ if(navClose){
 
 /*==================== REMOVE MENU MOBILE ====================*/
 
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction() {
+    const navMenu = document.getElementById('nav-menu')
+    //remove show menu when we click on any of the mernu option
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n=>n.addEventListener('click',linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
 
